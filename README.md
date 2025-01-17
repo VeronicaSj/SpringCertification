@@ -20,8 +20,12 @@ Java Spring Exercises done while I'm studying for the  Spring Professional Devel
   <li>Each "Unit" branch will have a lot of proyect branches</li>
 </ul>
 <br>
-<h2>MAIN BRANCH INFO</h2>
+<h2>UNIT1_REST_API BRANCH INFO</h2>
+At this unit I will be
 <ul>
-  <li>Default branch</li>
-  <li>This branch only have README.md</li>
+  <li>building a REST API with Spring Boot</li>
+  <li>Using Test Driven Developement</li>
+  <li>Using Spring Initializr</li>
+  <li>Implementing GET</li>
+  <li>Using Spring Data</li>
 </ul>
