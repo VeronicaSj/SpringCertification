@@ -21,7 +21,9 @@ class CashCardJsonTest {
 
         File expected = new File("src\\test\\resources\\example\\cashcard\\expected.json");
         expected.createNewFile();
-
+        
+        System.out.println(json.write(cashCard).toString());
+        
         assertThat(json.write(cashCard)).isStrictlyEqualToJson(expected);
         assertThat(json.write(cashCard)).hasJsonPathNumberValue("@.id");
         assertThat(json.write(cashCard)).extractingJsonPathNumberValue("@.id")
@@ -41,7 +43,7 @@ class CashCardJsonTest {
                 """;
         assertThat(json.parse(expected))
                 .isEqualTo(new CashCard(99L, 123.45));
-        assertThat(json.parseObject(expected).id()).isEqualTo(99);
-        assertThat(json.parseObject(expected).amount()).isEqualTo(123.45);
+        assertThat(json.parseObject(expected).getId()).isEqualTo(99);
+        assertThat(json.parseObject(expected).getAmount()).isEqualTo(123.45);
     }
 }
